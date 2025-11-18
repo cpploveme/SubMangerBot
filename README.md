@@ -20,16 +20,19 @@ Submanger Bot 是一个管理订阅链接的机器人 可以帮助使用者更�
 
 Submanger Bot 仅会在 config.yaml 文件中存储配置文件信息 在 My_sub.db 中存储订阅链接 在 Airport.list 文件中存储机场名称
 
-Submanger Bot 的全部数据仅会存储在本地和Telegram服务器(聊天记录) 除拥有ssh账密,Telegram Bot Token或超管授予权限外无法通过其他方式从Bot获取数据 ~~真没后门 你可以反一下试试~~
+Submanger Bot 的全部数据仅会存储在本地和Telegram服务器(聊天记录) 除拥有ssh账密,Telegram Bot Token或超管授予权限外无法通过其他方式从Bot获取数据 ~~真没后门 你可以反一下试试~~ 开源了反尼玛币
 
-Submanger Bot 仅会连接 Telegram服务器 订阅链接服务器 subconverter服务器  除此之外不会连接任何其他服务 ~~你可以自己抓包试试~~
+Submanger Bot 仅会连接 Telegram服务器 订阅链接服务器 subconverter服务器  除此之外不会连接任何其他服务 ~~你可以自己抓包试试~~ 直接看代码好吧
 
 ## 安装
-### 一键脚本
 
-一键脚本目前仅支持 `Debian/Ubuntu` 系统 其他系统请自行手动下载
+> 看看有啥 requirement 自己装一下吧
 
-脚本启动后会下载bot本体 配置进程守护 `screen` 并要求填写 `授权Token` `Telegram Bot Token` `超管Telegram id`
+~~### 一键脚本~~
+
+~~一键脚本目前仅支持 `Debian/Ubuntu` 系统 其他系统请自行手动下载~~
+
+~~脚本启动后会下载bot本体 配置进程守护 `screen` 并要求填写 `授权Token` `Telegram Bot Token` `超管Telegram id`~~
 
 ~~目前的一键脚本请在群内置顶获取~~ 这个旧版开源的 没必要一键脚本
 
@@ -321,4 +324,5 @@ Bot 采用本地鉴权 读取Bot用户名后加密并与token匹配 若不一致
 `cron.delay` 为监测延时 每获取一轮订阅后延迟一段时间重新获取
 
 为避免短时间内多次获取同一机场订阅 监测会打乱顺序逐条获取
+
 

@@ -1,0 +1,27 @@
+token: # 授权Token
+telegramtoken: # Telegram Bot Token
+administrator: # 超级管理列表
+- # Telegram User Id
+admin: []
+password: 1145141919810
+intro: 这是一个用 `Telegram Bot Api` 来管理跨境服务提供商的订阅平台捏
+shortlink: https://jyf.icu/api/url?url=
+impend: 10
+timeout: 7
+adminOnlyMode: 0
+avoidJoinGroups: 1
+allowAdminToInvite: 1
+refreshFrequency: 5
+convert:
+  backend: https://api.nexconvert.com/
+  config: https://cdn.jsdelivr.net/gh/lhl77/sub-ini@main/tsutsu-mini-gfw.ini
+  target: clash
+  parameter: &emoji=true&remove_emoji=false&interval=3600&udp=true&expand=false&list=false&scv=true&fdn=true&new_name=true
+default: 0
+overridedUA:
+  request:Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36
+  subscribtion: ClashforWindows/0.18.1
+cron:
+  enable: 0
+  interval: 3600
+  list: []

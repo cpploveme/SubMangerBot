@@ -1,0 +1,34 @@
+token: # 你的 授权Token
+telegramtoken: # 你的 Telegram Bot Token
+administrator: # 超级管理列表
+- # 你自己的 Telegram User Id
+- # 其他的 Telegram User Id
+admin: # 管理列表
+- # 管理员的 Telegram User Id
+password: # 访问密码
+intro: # bot介绍
+shortlink: # 短链接api 默认 https://jyf.icu/api/url?url=
+impend: # 临期天数 默认 10
+timeout: # 请求超时时间 默认 7
+adminOnlyMode: # 唯一管理模式 默认为 0 (关闭)
+avoidJoinGroups: # 防拉群 默认为 1 (0关闭 1管理可拉群 2超管可拉群)
+allowAdminToInvite: # 允许管理赠与订阅 默认为 0 (关闭)
+refreshFrequency: # 进度条刷新频率 每 n% 刷新一次 默认为 5
+callbackUrl: # 选填 将 bot 不处理的消息或指令使用 POST 传输 并展示返回内容作为回复
+trust:
+- # 信任的群组id
+convert: # 订阅转换参数
+  backend: # 订阅转换后端 默认 https://api.nexconvert.com/
+  config: # 订阅转换规则 默认 https://cdn.jsdelivr.net/gh/lhl77/sub-ini@main/tsutsu-mini-gfw.ini
+  target: # 订阅转换目标类型
+  parameter: # 订阅转换参数 默认 '&emoji=true&remove_emoji=false&interval=3600&udp=true&expand=false&list=false&scv=true&fdn=true&new_name=true'
+default: # 启动时是否从config.yaml读取配置 1为不读取 0为读取 默认关闭
+overridedUA: # 覆写UserAgent
+  request: # 请求非订阅链接时的UserAgent 
+  subscribtion: # 请求非订阅链接时的UserAgent 默认 ClashforWindows/0.18.1
+cron: # 订阅监测
+  enable: # 是否开启监测 默认为 0 (关闭)
+  interval: # 订阅监测间隔 单位为秒 默认为 3600 (1小时) 修改此值后请重启bot
+  list: # 启用监测的群聊
+  - id # 全部订阅
+  - id: 关键词 # 只显示包含关键词的订阅
